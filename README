@@ -1,1 +1,3 @@
 Just a small C project that attempts to implement the queue of executable blocks that run consecutively but allow for manualized asynchronous execution.
+
+Some might conclude: "Just like GCD?". *A finger-snap and a shrugface in reply*

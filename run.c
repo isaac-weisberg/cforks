@@ -11,13 +11,13 @@ void run() {
     s = 7;
 
     printf("Now the 's' is %i\n", s);
-    printf("Run end");
+    printf("Run end\n");
 }
 
 void fun() {
-    printf("HAVING SO MUCH FUN WITH THIS");
+    printf("HAVING SO MUCH FUN WITH THIS\n");
 }
 
 void hugh() {
-    printf("FUCK BOBBY");
+    printf("FUCK BOBBY\n");
 }
