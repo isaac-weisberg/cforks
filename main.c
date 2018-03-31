@@ -1,22 +1,20 @@
-// #include <stdlib.h>
 #include <stdio.h>
-
-#include "blocks.h"
-#include "run.h"
+#include "queue.h"
 
 void main() {
-    blocks_init();
+    Queue* q;
+    // blocks_init();
 
-    blocks_submit(run);
-    blocks_submit(run);
-    blocks_submit(hugh);
+    // blocks_submit(run);
+    // blocks_submit(run);
+    // blocks_submit(hugh);
 
-    blocks_submit(fun);
-    blocks_submit(fun);
-    blocks_submit(hugh);
-    blocks_submit(run);
+    // blocks_submit(fun);
+    // blocks_submit(fun);
+    // blocks_submit(hugh);
+    // blocks_submit(run);
 
-    blocks_main();
+    // blocks_main();
 
     printf("Program end.\n");
 }

@@ -1,9 +1,9 @@
 CC=gcc
 
 OBJECTS=\
-		blocks.o\
 		main.o\
-		run.o \
+		run.o\
+		queue.o\
 
 EXEC=a.out
 

@@ -1,5 +1,9 @@
 #include "queue.h"
 
+const int BLOCK_POOL_INIT_SIZE = 10;
+
+size_t SIZE_OF_QUEUE = sizeof(Queue);
+
 Queue* queue_new() {
     Queue* q = malloc(sizeof(Queue));
 
@@ -8,6 +12,11 @@ Queue* queue_new() {
     return q;
 }
 
+void queue_submit(Queue* q, Block* block) {
+    
+}
+
+// MARK: - Static functions
 void queue_init(Queue* q) {
-    return;
+    (*q).pool = malloc(BLOCK_POOL_INIT_SIZE * SIZE_OF_BLOCK);
 }
