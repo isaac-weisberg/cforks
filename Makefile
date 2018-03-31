@@ -1,6 +1,6 @@
 CC=gcc
 
-SOURCES=\
+OBJECTS=\
 		blocks.o\
 		main.o\
 		run.o \
@@ -12,11 +12,11 @@ default: build
 %.0: %.c
 	$(CC) -c $< -o $@
 
-build: ${SOURCES}
-	gcc $(SOURCES) -o $(EXEC)
+build: ${OBJECTS}
+	gcc $(OBJECTS) -o $(EXEC)
 
 clean:
-	-rm -rf $(SOURCES) $(EXEC)
+	-rm -rf $(OBJECTS) $(EXEC)
 
 run:
 	./$(EXEC)
