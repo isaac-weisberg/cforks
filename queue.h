@@ -1,5 +1,7 @@
 /* 
     So the goal of the pools existense is to rotate, essentially
+
+    ATM w/o dynamic relocations :(
  */
 
 #ifndef QUEUE_H
@@ -12,6 +14,8 @@
 typedef struct {
     Block* pool;
     int pool_length;
+    int submition_index;
+    int execution_index;
 } Queue;
 
 Queue* queue_new();
